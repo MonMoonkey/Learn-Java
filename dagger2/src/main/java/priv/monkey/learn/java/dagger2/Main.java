@@ -12,5 +12,10 @@ public class Main {
 //        DaggerIMainComponent.builder().build();
 
 //        System.out.println(p.sss);
+//        AAAcomponent AC = DaggerAAAcomponent.builder().bBBmodule(new BBBmodule("Fri")).build();
+        AAAcomponent AC = DaggerAAAcomponent.builder().sSS("FRI").build();
+        AAA a = AC.injectAAA();
+        AAA aa = AC.injectAAA();
+        System.out.println(a.b.sss);
     }
 }
