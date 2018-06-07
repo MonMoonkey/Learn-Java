@@ -18,8 +18,17 @@ public class BBBmodule {
 ////        this.s=s;
 ////    }
     @Provides
-    public BBB provideBBB(@SSS String s) {
-        System.out.println("BBBBBBBB");
+    @NameMonkey("11111")
+    public BBB provideBBB1(@SSS String s) {
+        System.out.println("BBB1111");
         return new BBB(s);
     }
+
+    @Provides
+    @NameMonkey("22222")
+    public BBB provideBBB2(@SSS String s) {
+        System.out.println("BBB2222");
+        return new BBB(s);
+    }
+
 }

@@ -7,7 +7,6 @@ import javax.inject.Singleton;
  * @author:Monkey
  * @time: Create on 2018/6/1
  */
-@Singleton
 public class BBB {
     public  String sss = "xixipi";
     @Inject

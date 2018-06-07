@@ -9,7 +9,7 @@ import javax.inject.Inject;
 public class AAA {
     public BBB b;
     @Inject
-    public AAA(BBB b) {
+    public AAA(@NameMonkey("11111")BBB b) {
         this.b=b;
     }
 }

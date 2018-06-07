@@ -18,10 +18,12 @@ import javax.inject.Singleton;
 //}
 
 //@Component(modules = BBBmodule.class)
-@Singleton
+//@Singleton
 @Component(modules = BBBmodule.class)
 public interface AAAcomponent {
     AAA injectAAA();
+
+    BBB injectBBB();
 
     @Component.Builder
     interface  Builder{

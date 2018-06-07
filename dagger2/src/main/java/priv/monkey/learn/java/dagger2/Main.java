@@ -17,5 +17,8 @@ public class Main {
         AAA a = AC.injectAAA();
         AAA aa = AC.injectAAA();
         System.out.println(a.b.sss);
+        @NameMonkey("22222")
+        BBB b = AC.injectBBB();
+        System.out.println(b.sss);
     }
 }
